@@ -10,6 +10,7 @@ Angle _$AngleFromJson(Map<String, dynamic> json) => Angle(
       json['type'] as String,
       (json['id'] as num).toInt(),
       json['canbus'] as String?,
+      json['fileName'] as String?,
     );
 
 Map<String, dynamic> _$AngleToJson(Angle instance) => <String, dynamic>{

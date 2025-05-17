@@ -13,11 +13,11 @@ import 'package:nt4/nt4.dart';
 
 /// Displays detailed information about a SampleItem.
 // ignore: must_be_immutable
-class SampleItemDetailsView extends StatelessWidget {
+class SampleItemDetailsView2 extends StatelessWidget {
   SettingsController controller;
-  SampleItemDetailsView({super.key, required this.controller});
+  SampleItemDetailsView2({super.key, required this.controller});
 
-  static const routeName = '/sample_item';
+  static const routeName = '/sample_item2';
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class SampleApp extends StatefulWidget {
 
   initState() async {
   pathController = TextEditingController();
-  pathController.text = "b";
+  pathController.text = "c";
   client = NT4Client(
   serverBaseAddress: '127.0.0.1',
   onConnect: () {

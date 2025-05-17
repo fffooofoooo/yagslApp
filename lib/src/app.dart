@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:yagsl_app/src/sample_feature/sample_item_details_view2.dart';
 
 import 'sample_feature/sample_item_details_view.dart';
 import 'sample_feature/sample_item_list_view.dart';
@@ -71,6 +72,8 @@ class MyApp extends StatelessWidget {
                     return SettingsView(controller: settingsController);
                   case SampleItemDetailsView.routeName:
                     return SampleItemDetailsView(controller: settingsController);
+                  case SampleItemDetailsView2.routeName:
+                    return SampleItemDetailsView2(controller: settingsController);
                   case SampleItemListView.routeName:
                   default:
                     return const SampleItemListView();
